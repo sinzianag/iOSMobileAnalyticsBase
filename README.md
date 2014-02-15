@@ -12,3 +12,4 @@ Workflows:
 * Basic action ( a user click + any context )
 * Start/stop action
 * Media Tracking
+* Heat Map
