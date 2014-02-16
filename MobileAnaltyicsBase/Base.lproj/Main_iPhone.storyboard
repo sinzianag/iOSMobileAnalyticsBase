@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nl5-ag-sfr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -9,18 +9,184 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9tA-Sd-DFW">
+                                <rect key="frame" x="20" y="79" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Account/Global Information Set UP" backgroundImage="color1.png"/>
+                                <connections>
+                                    <action selector="goToGlobalInfo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cfg-Lq-eEy"/>
+                                    <segue destination="UAQ-zT-5aq" kind="push" id="wqa-gZ-00M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rqb-rJ-ail">
+                                <rect key="frame" x="20" y="117" width="280" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Simple Action (User Click)" backgroundImage="color 9.png"/>
+                                <connections>
+                                    <segue destination="ifs-kd-KWI" kind="push" id="QI9-hT-5u3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c5S-tZ-BRp">
+                                <rect key="frame" x="20" y="158" width="280" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Start/Stop Action" backgroundImage="colour 3.png"/>
+                                <connections>
+                                    <segue destination="1pF-MB-E5t" kind="push" id="u1g-HL-Qxq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mrw-mk-5HU">
+                                <rect key="frame" x="20" y="199" width="280" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Repeated Action" backgroundImage="color 8.png"/>
+                                <connections>
+                                    <segue destination="JG2-fd-c3e" kind="push" id="uZt-gP-R3B"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="voz-rN-Mq9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="223" y="-303"/>
+        </scene>
+        <!--Global Info View Controller - Set Up-->
+        <scene sceneID="qzr-Ad-f1u">
+            <objects>
+                <viewController id="UAQ-zT-5aq" customClass="GlobalInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ao-jW-0Cc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FhX-r1-svv">
+                                <rect key="frame" x="20" y="80" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="8Tp-lg-twV">
+                                <rect key="frame" x="114" y="76" width="186" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Set Up" id="zd6-py-C2q">
+                        <barButtonItem key="backBarButtonItem" title=" " id="rk9-0g-WDd"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jpz-be-eKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="-347"/>
+        </scene>
+        <!--Table View Controller - Root View Controller-->
+        <scene sceneID="SJw-m6-vr8">
+            <objects>
+                <tableViewController id="IUp-1S-Ke2" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="W4e-Dk-WvI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="JbJ-fK-agO">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JbJ-fK-agO" id="ed2-S9-Qj9">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="CVj-4e-MAN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWm-lB-Vm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="-360"/>
+        </scene>
+        <!--Main Navigation Controller-->
+        <scene sceneID="9G0-dr-sEd">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="nl5-ag-sfr" customClass="MainNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xCY-Y6-W9S">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="0Xb-fB-g4B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ML-es-VRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="-303"/>
+        </scene>
+        <!--Simple Action View Controller - Simple Action-->
+        <scene sceneID="gL5-f7-TDw">
+            <objects>
+                <viewController id="ifs-kd-KWI" customClass="SimpleActionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9sh-hI-8G5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.76308173629999998" green="1" blue="0.68732411630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Simple Action" id="heV-P2-1dh">
+                        <barButtonItem key="backBarButtonItem" title=" " id="nW5-79-DcU"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2IZ-An-Jeo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="252"/>
+        </scene>
+        <!--Re - Repeated Action-->
+        <scene sceneID="ign-uk-he3">
+            <objects>
+                <viewController id="JG2-fd-c3e" customClass="Re" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lps-cU-s3q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Repeated Action" id="jfY-yS-gsV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkV-nI-tXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="878"/>
+        </scene>
+        <!--Start Stop Action View Controller - Start/Stop Action-->
+        <scene sceneID="iZQ-mM-7UP">
+            <objects>
+                <viewController id="1pF-MB-E5t" customClass="StartStopActionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wsl-0h-lLg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Start/Stop Action" id="rHp-nV-x2Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gW-ef-FCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="872"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="color 8.png" width="57" height="49"/>
+        <image name="color 9.png" width="45" height="51"/>
+        <image name="color1.png" width="50" height="168"/>
+        <image name="colour 3.png" width="65" height="234"/>
+    </resources>
+    <color key="tintColor" red="0.14459255569999999" green="0.488325538" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
