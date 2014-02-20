@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAI.h"
 
-@interface StartStopActionViewController : UIViewController
+@interface StartStopActionViewController : GAITrackedViewController
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAI.h"
 
-@interface RepeatActionViewController : UINavigationController
+@interface RepeatActionViewController : GAITrackedViewController
 
 @end

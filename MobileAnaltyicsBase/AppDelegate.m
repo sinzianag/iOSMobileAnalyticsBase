@@ -7,12 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "GoogleAnalyticsController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Starting Analytics Tracker
+    GoogleAnalyticsController* tracker = [GoogleAnalyticsController sharedInstance];
+    tracker.enabled = YES;
     return YES;
 }
 							

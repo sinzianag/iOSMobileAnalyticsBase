@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAI.h"
 
-@interface GlobalInfoViewController : UIViewController
+@interface GlobalInfoViewController : GAITrackedViewController
 
 @end
