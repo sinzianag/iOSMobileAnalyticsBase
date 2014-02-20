@@ -52,6 +52,8 @@
 		9E7665B918B00BB300CC8DA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E76659818B00BB100CC8DA1 /* UIKit.framework */; };
 		9E7665C118B00BB300CC8DA1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E7665BF18B00BB300CC8DA1 /* InfoPlist.strings */; };
 		9E7665C318B00BB300CC8DA1 /* MobileAnaltyicsBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7665C218B00BB300CC8DA1 /* MobileAnaltyicsBaseTests.m */; };
+		9E915E7B18B64A3A001887B1 /* InterfaceDimValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E915E7A18B64A3A001887B1 /* InterfaceDimValues.m */; };
+		9E915E7C18B64A3A001887B1 /* InterfaceDimValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E915E7A18B64A3A001887B1 /* InterfaceDimValues.m */; };
 		9E91FCAE18B54F2100FB379F /* GoogleAnalyticsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E91FCAD18B54F2100FB379F /* GoogleAnalyticsController.m */; };
 		9E91FCAF18B54F2100FB379F /* GoogleAnalyticsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E91FCAD18B54F2100FB379F /* GoogleAnalyticsController.m */; };
 /* End PBXBuildFile section */
@@ -107,6 +109,8 @@
 		9E7665BE18B00BB300CC8DA1 /* MobileAnaltyicsBaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileAnaltyicsBaseTests-Info.plist"; sourceTree = "<group>"; };
 		9E7665C018B00BB300CC8DA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E7665C218B00BB300CC8DA1 /* MobileAnaltyicsBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileAnaltyicsBaseTests.m; sourceTree = "<group>"; };
+		9E915E7918B64A3A001887B1 /* InterfaceDimValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceDimValues.h; sourceTree = "<group>"; };
+		9E915E7A18B64A3A001887B1 /* InterfaceDimValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceDimValues.m; sourceTree = "<group>"; };
 		9E91FCAC18B54F2100FB379F /* GoogleAnalyticsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAnalyticsController.h; sourceTree = "<group>"; };
 		9E91FCAD18B54F2100FB379F /* GoogleAnalyticsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAnalyticsController.m; sourceTree = "<group>"; };
 		A3B36E1DDB6A4CE5B33B4641 /* libPods-MobileAnaltyicsBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAnaltyicsBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +175,8 @@
 				9E1F928B18B0338300991FCF /* GlobalInfoViewController.m */,
 				9E7665AC18B00BB200CC8DA1 /* ViewController.h */,
 				9E7665AD18B00BB200CC8DA1 /* ViewController.m */,
+				9E915E7918B64A3A001887B1 /* InterfaceDimValues.h */,
+				9E915E7A18B64A3A001887B1 /* InterfaceDimValues.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E915E7B18B64A3A001887B1 /* InterfaceDimValues.m in Sources */,
 				9E1F929018B0353B00991FCF /* SimpleActionViewController.m in Sources */,
 				9E7665AE18B00BB200CC8DA1 /* ViewController.m in Sources */,
 				9E1F928C18B0338300991FCF /* GlobalInfoViewController.m in Sources */,
@@ -456,6 +463,7 @@
 			files = (
 				9E7665C318B00BB300CC8DA1 /* MobileAnaltyicsBaseTests.m in Sources */,
 				9E1F929D18B0E8D400991FCF /* RepeatActionViewController.m in Sources */,
+				9E915E7C18B64A3A001887B1 /* InterfaceDimValues.m in Sources */,
 				9E1F929118B0353B00991FCF /* SimpleActionViewController.m in Sources */,
 				9E1F928D18B0338300991FCF /* GlobalInfoViewController.m in Sources */,
 				9E1F929518B0359B00991FCF /* StartStopActionViewController.m in Sources */,

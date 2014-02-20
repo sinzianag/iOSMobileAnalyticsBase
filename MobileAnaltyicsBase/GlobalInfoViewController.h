@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "GAI.h"
 
-@interface GlobalInfoViewController : GAITrackedViewController
+@interface GlobalInfoViewController : GAITrackedViewController <UITextFieldDelegate>
 
 @end
